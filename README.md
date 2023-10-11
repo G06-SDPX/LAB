@@ -10,7 +10,7 @@
 `python unit_test`
 
 ### Robot Testing
-`Robot ./test_cases.robot`
+`robot ./robot_test.robot`
 
 ### robotframework-requests
 `pip install robotframework`
