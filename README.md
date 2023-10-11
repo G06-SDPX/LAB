@@ -21,6 +21,8 @@
 
 ### How to SSH
 `ssh master@192.168.17.132`
+`ssh test@192.168.17.131`
+`ssh pre-prod@192.168.17.133`
 
 ### IP VMs
 #### master 192.168.17.132
