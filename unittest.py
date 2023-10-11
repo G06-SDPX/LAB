@@ -1,17 +1,20 @@
 import unittest
 
-from app.app import is_prime
+from app import app
 
-class TestIsPrime(unittest.TestCase):
+class AppTestCase(unittest.TestCase):
 
   def test_is_prime_17(self):
-    self.assertEqual(is_prime(17), 'True')
+    res = app.is_prime(17)
+    self.assertEqual(res, 'True')
 
   def test_is_prime_36(self):
-    self.assertEqual(is_prime(36), 'False')
+    res = app.is_prime(36)
+    self.assertEqual(res, 'False')
 
   def test_is_prime_13219(self):
-    self.assertEqual(is_prime(13219), 'True')
+    res = app.is_prime(13219)
+    self.assertEqual(res, 'True')
 
 if __name__ == "__main__":
     unittest.main()
