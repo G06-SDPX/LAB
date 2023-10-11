@@ -67,7 +67,7 @@ pipeline {
                 }
                 steps {
                     echo 'Run Robot Testing'
-                    sh 'robot ./test_prime.robot'
+                    sh 'robot ./robot_test.robot'
                 }
             }
         }

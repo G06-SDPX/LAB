@@ -1,6 +1,5 @@
 import unittest
-from app import app
-
+from app import app 
 
 class TestPrimeNumber(unittest.TestCase):
     def test_prime_numbers(self):
@@ -12,7 +11,9 @@ class TestPrimeNumber(unittest.TestCase):
     def non_prime_number(self):
         non_prime = app.is_prime(36)
         self.assertFalse(non_prime, 'False')
+       
 
+        
 
 if __name__ == '__main__':
     unittest.main()

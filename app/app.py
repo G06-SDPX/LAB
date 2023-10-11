@@ -1,30 +1,24 @@
 from flask import Flask, request
 
-import math
-
 app = Flask(__name__)
 
+
 @app.route('/')
-def home():
-    return '<h1> G06-SDPX </h1>'
+def hello():
+    q = request.args.get('q')
+    print(q)
+    return {"message": "Hello!"}, 201
+
 
 @app.route('/is_prime/<int:x>')
 def is_prime(x):
-  """
-  ตรวจสอบว่า x เป็นจำนวนเฉพาะหรือไม่
+    if x <= 1:
+        return False
+    for i in range(2, int(x**(1/2)) + 1):
+        if (x % i) == 0:
+            return False
+    return True
 
-  Args:
-    x: จำนวนเต็ม
-
-  Returns:
-    True ถ้า x เป็นจำนวนเฉพาะ
-    False ถ้า x ไม่ไช่จำนวนเฉพาะ
-  """
-  
-  if x < 2:
-    return 'False'
-
-  return str(all(x % i for i in range(2, int(math.sqrt(x)) + 1)))
 
 if __name__ == '__main__':
-  app.run()
+    app.run()
