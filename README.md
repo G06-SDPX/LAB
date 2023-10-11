@@ -31,3 +31,7 @@
 #### master 192.168.17.132
 #### test 192.168.17.131
 #### pre-prod 192.168.17.133
+
+### user VMs
+`master` `test` `pre-prod`
+`123456789`
