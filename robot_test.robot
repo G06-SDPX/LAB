@@ -4,7 +4,7 @@ Library    RequestsLibrary
 
 *** Test Cases ***
 true_when_x_is_17
-    Create Session    session    http://127.0.0.1:5000/
+    Create Session    session    http://localhost:5000/
     Check Is Prime    17    True
     
 false_when_x_is_36
