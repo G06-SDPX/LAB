@@ -31,7 +31,7 @@ pipeline {
             }
             stage('Clean Workspace') {
                 agent {
-                    label 'test'
+                    label 'pre-prod'
                 }
                 steps {
                     echo 'DownTime'
@@ -41,7 +41,7 @@ pipeline {
             }
             stage('Stop and Remove Docker Container') {
                 agent {
-                    label 'test'
+                    label 'pre-prod'
                 }
                 steps {
                     echo 'Show Docker running'
@@ -54,7 +54,7 @@ pipeline {
             }
             stage('Create Container') {
                 agent {
-                    label 'test'
+                    label 'pre-prod'
                 }
                 steps {
                     echo 'Run Container'

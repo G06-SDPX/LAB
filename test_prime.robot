@@ -4,7 +4,7 @@ Library    RequestsLibrary
 *** Test Cases ***
 Test Is Prime
     # Create a session to the API
-    Create Session  session  http://localhost:5000
+    Create Session  session  http://192.168.17.133:5000
 
     # Test for a prime number (17)
     Test For Number  17  True
