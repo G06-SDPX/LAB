@@ -19,6 +19,9 @@
 ### Check IP VMs
 `ip a` or `ifconfig`
 
+### How to SSH
+`ssh master@192.168.17.132`
+
 ### IP VMs
 #### master 192.168.17.132
 #### test 192.168.17.131
