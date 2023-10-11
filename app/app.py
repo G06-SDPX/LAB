@@ -22,7 +22,7 @@ def is_prime(x):
   """
   
   if x < 2:
-    return False
+    return 'False'
 
   return str(all(x % i for i in range(2, int(math.sqrt(x)) + 1)))
 
